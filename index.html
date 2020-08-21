@@ -8,23 +8,35 @@
     <title>Weather Board</title>
     <link rel="icon" href="images/favicon.jfif" sizes="25X41">
 	<link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
-	<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-	<link rel="stylesheet" type="text/css" href="css/styles.css">
-	<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
-	<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+	
+	
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
 	<script src="js/script.js"></script>
 </head>
 
-<body>
-	<div id="background-carousel">
-	    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-	      <div class="carousel-inner">
-	        <div class="item active" style="background-image:url(http://placehold.it/1600x800/)"></div>
-	        <div class="item" style="background-image:url(http://placehold.it/1600x500/)"></div>
-	        <div class="item" style="background-image:url(http://placehold.it/1600x400/)"></div>  
-	      </div>
-	    </div>
+<body style="background-color: #C3397E">
+	<h1>Weather Widget</h1>
+	<div id="box">
+		<div id="wrapper">
+			<h2 class="location-timezone">Timezone</h2>
+			<div class="icon">Icon</div>
+			<hr class="hor-line">
+			<div class="temperature">
+				<h5>Temperature: <span class="temperature-degree">35</span></h5>
+				<h5>Wind Speed: <span class="wind">12mph</span></h5>
+				<h5>Humidity Level: <span  class="humidity">12%</span></h5>
+			</div>
+		</div>
 	</div>
+	<div class="text-center" id="next-city-button">
+		<button type="button" class="btn btn-info" id="text-inside-button"> Check for Another City</button>
+	</div>
+	
+
+
 
 </body>
 </html>

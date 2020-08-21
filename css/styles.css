@@ -1,3 +1,65 @@
+body{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box!important ;
+	font-family: 'Alata', sans-serif;
+}
+
+
+h1{              /*weather widget heading*/
+	text-align: center;
+	color: white;
+	padding: 8vh ;	
+}
+
+#box{
+	width: 300px;
+	height: 400px;
+	background-image: linear-gradient(rgb(47,150,163),rgb(48,62,143));
+	position: relative;
+	margin: auto;
+}
+#wrapper{           /*content in box*/
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	color: white;
+}
+
+.location-timezone, .icon {
+	text-align: center;
+	padding: 3vh;
+}
+
+h5{
+	text-align: left;
+	padding: 1vh;
+}
+
+.hor-line{
+	width: 80%;
+	border: 1.5px solid white;
+}
+
+#next-city-button{
+	padding-top: 5vh;
+
+}
+
+#text-inside-button{
+	padding: 10px 50px;
+}
+
+
+@media(max-width: 500px){
+	h1{
+		padding: 6vh;
+		font-size: 9vw;
+	}
+}
+
+/*
 html,body {
     height:100%;
 	width:100%;
@@ -5,21 +67,31 @@ html,body {
 }
 #background-carousel{
 	position:fixed;
-	width:100%;
-	height:100%;
+	width:100vw;
+	height:100vh;
 	z-index:-1;
 }
 .carousel,
 .carousel-inner {
-	width:100%;
-	height:100%;
+	width:100vw;
+	height:100vh;
 	z-index:0;
 	overflow:hidden;
 }
 .item {
-	width:100%;
-	height:100%;
+	width:100vw;
+	height:100vh;
 	background-position:center center;
 	background-size:cover;
 	z-index:0;
 }
+
+#content-wrapper {
+	position:absolute;
+	z-index:1 !important;
+	min-width:100vw;
+	min-height:100vh;
+}
+.well {
+    opacity:0.85
+}*/
