@@ -1,16 +1,19 @@
-
 function promptbox(){
  	var loc = window.prompt("Please Enter City Name:");
- 	return loc;
+ 	if(loc=="")
+    {
+     	loc="Jodhpur";
+    }
+ 	myapi(loc);
 }
 
-function myapi(){
-        
-        var loc = promptbox();
-        if(loc=="")
-        {
-        	loc="Jodhpur";
-        }
+window.onload = function(){
+	loc="Jodhpur";
+	myapi(loc);
+}
+
+
+function myapi(loc){        
         console.log(loc);
         //var apkey="3054e14dee01dc11741d8820d2ed3d0d";
         fetch('http://api.openweathermap.org/data/2.5/weather?q=' + loc + '&APPID=3054e14dee01dc11741d8820d2ed3d0d')
@@ -37,7 +40,7 @@ function myapi(){
 
 window.addEventListener('load',()=>{
    var but= document.getElementById("text-inside-button");
-   but.addEventListener('click',myapi);
+   but.addEventListener('click',promptbox);
     console.log("hey there");
 })
 
