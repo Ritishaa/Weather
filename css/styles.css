@@ -15,7 +15,7 @@ h1{              /*weather widget heading*/
 #box{
 	width: 300px;
 	height: 420px;
-	background-image: linear-gradient(rgb(47,150,163),rgb(48,62,143));
+	/*background-image: linear-gradient(rgb(47,150,163),rgb(48,62,143));*/
 	position: relative;
 	margin: auto;
 	border-radius: 10px;
