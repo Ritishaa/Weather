@@ -17,23 +17,28 @@
 	<script src="js/script.js"></script>
 </head>
 
-<body style="background-color: #C3397E">
+<body style="background-color: black">
 	<h1>Weather Widget</h1>
 	<div id="box">
 		<div id="wrapper">
 			<h2 class="location-timezone">Timezone</h2>
-			<div class="icon">Icon</div>
+			<div class="icon"><img class="ic" src="icon/unknown.png"></div>
+			<div class="description">Hot</div>
 			<hr class="hor-line">
 			<div class="temperature">
-				<h5>Temperature: <span class="temperature-degree">35</span></h5>
-				<h5>Wind Speed: <span class="wind">12mph</span></h5>
-				<h5>Humidity Level: <span  class="humidity">12%</span></h5>
+				<div class="degree-section">
+					<h5>Temperature: <span class="temperature-degree">0</span><span>°C</span></h5>
+				</div>
+					<h5>Wind Speed: <span class="wind">0</span><span>mps</span></h5>
+					<h5>Humidity Level: <span  class="humidity">0</span><span>%</span></h5>
 			</div>
 		</div>
 	</div>
 	<div class="text-center" id="next-city-button">
 		<button type="button" class="btn btn-info" id="text-inside-button"> Check for Another City</button>
 	</div>
+
+	
 	
 
 
