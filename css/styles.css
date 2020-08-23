@@ -8,12 +8,12 @@ body{
 
 h1{              /*weather widget heading*/
 	text-align: center;
-	color: white;
-	padding: 8vh ;	
+	color: rgb(30, 9, 61);
+	padding: 7vh ;	
 }
 
 #box{
-	width: 300px;
+	width: 320px;
 	height: 420px;
 	/*background-image: linear-gradient(rgb(47,150,163),rgb(48,62,143));*/
 	position: relative;
@@ -25,7 +25,13 @@ h1{              /*weather widget heading*/
 	justify-content: center;
 	flex-direction: column;
 	align-items: center;
-	color: white;
+	color: black;
+	font-weight: bolder;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.temperature{
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .location-timezone{
@@ -39,7 +45,12 @@ h1{              /*weather widget heading*/
 
 .description{
 	text-align: center;
-	padding: 1vh;
+	padding-bottom: 2vh;
+	font-size: 20px;
+}
+
+p{
+	font-size: 24px;
 }
 
 h5{
@@ -52,20 +63,14 @@ h5{
 	align-items: center;
 }
 
-
-
-.hor-line{
-	width: 80%;
-	border: 1.5px solid white;
-}
-
 #next-city-button{
 	padding-top: 5vh;
 
 }
 
 #text-inside-button{
-	padding: 10px 50px;
+	padding: 10px 35px;
+	background-color: #2C96D0!important;
 }
 
 
@@ -75,40 +80,3 @@ h5{
 		font-size: 9vw;
 	}
 }
-
-/*
-html,body {
-    height:100%;
-	width:100%;
-	position:relative;
-}
-#background-carousel{
-	position:fixed;
-	width:100vw;
-	height:100vh;
-	z-index:-1;
-}
-.carousel,
-.carousel-inner {
-	width:100vw;
-	height:100vh;
-	z-index:0;
-	overflow:hidden;
-}
-.item {
-	width:100vw;
-	height:100vh;
-	background-position:center center;
-	background-size:cover;
-	z-index:0;
-}
-
-#content-wrapper {
-	position:absolute;
-	z-index:1 !important;
-	min-width:100vw;
-	min-height:100vh;
-}
-.well {
-    opacity:0.85
-}*/
