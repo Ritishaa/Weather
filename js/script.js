@@ -16,7 +16,7 @@ window.onload = function(){
 function myapi(loc){        
         console.log(loc);
         //var apkey="3054e14dee01dc11741d8820d2ed3d0d";
-        fetch('http://api.openweathermap.org/data/2.5/weather?q=' + loc + '&APPID=3054e14dee01dc11741d8820d2ed3d0d')
+        fetch('https://api.openweathermap.org/data/2.5/weather?q=' + loc + '&APPID=3054e14dee01dc11741d8820d2ed3d0d')
         .then(alldata=>{return alldata.json();})
         .then(_reqdata=>{
             var {temp, humidity} =_reqdata.main;
