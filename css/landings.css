@@ -52,7 +52,7 @@ body {
   background-image: url(https://www.hinzie.com/media/image/34592.jpg);
 }
 .slideshow li:nth-child(2) { 
-  background-image: url(https://images.pexels.com/photos/733168/pexels-photo-733168.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+  background-image: url(https://images.pexels.com/photos/37728/pexels-photo-37728.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
   animation-delay: 6s; 
 }
 .slideshow li:nth-child(3) { 
@@ -64,7 +64,7 @@ body {
   animation-delay: 18s; 
 }
 .slideshow li:nth-child(5) { 
-  background-image: url(https://images.pexels.com/photos/37728/pexels-photo-37728.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+  background-image: url(https://images.pexels.com/photos/733168/pexels-photo-733168.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
   animation-delay: 24s; 
 }
 
